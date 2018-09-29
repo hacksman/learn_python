@@ -23,3 +23,9 @@ else:
     print("父进程({}) 创造了 子进程（{}）".format(os.getpid(), pid))
 
 
+
+
+
+
+
+
