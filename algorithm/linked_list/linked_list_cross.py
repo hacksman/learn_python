@@ -52,6 +52,7 @@ class Solution:
 
         return pa
 
+
 if __name__ == '__main__':
     node_cross_check = Solution()
     result = node_cross_check.getIntersectionNode(c1, c2)
