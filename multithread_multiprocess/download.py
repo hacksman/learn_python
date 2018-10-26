@@ -2,12 +2,11 @@
 # coding:utf-8
 # @Time :10/26/18 11:19
 
-import json
 import logging
 import requests
 import os
 from pathlib import Path
-from urllib.request import urlopen, Request
+from urllib.request import urlopen
 from multithread_multiprocess import CLIENT_ID
 
 

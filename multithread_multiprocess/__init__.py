@@ -2,6 +2,13 @@
 # coding:utf-8
 # @Time :10/26/18 11:18
 
+"""
+    matrials:
+        # 1. Python Multithreading and Multiprocessing Tutorial
+        https://www.toptal.com/python/beginners-guide-to-concurrency-and-parallelism-in-python
+"""
+
+
 import logging
 
 CLIENT_ID = "your_client_id"

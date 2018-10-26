@@ -2,12 +2,10 @@
 # coding:utf-8
 # @Time :10/26/18 15:34
 
+import time
+
 from multithread_multiprocess import CLIENT_ID
 from datetime import timedelta
-
-import logging
-import os
-import time
 
 from queue import Queue
 from threading import Thread
@@ -53,6 +51,7 @@ def main():
     queue.join()
 
     logger.info("Took {} seconds".format(timedelta(seconds=time.time() - ts)))
+
 
 if __name__ == '__main__':
     main()
