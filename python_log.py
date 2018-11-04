@@ -23,6 +23,9 @@
 """
 
 import logging
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 # 1. 日志级别
 # 日志级别等级：debug < info < warning < error < critical（毁灭级，软件已经不能正常工作）
