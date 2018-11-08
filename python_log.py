@@ -222,7 +222,7 @@ logger.setLevel(logging.INFO)
 logger.addHandler(log_stream_handler)
 logger.addHandler(log_file_handler)
 
-logger.info("你好啊")
-logger.warning("真香警告...")
-logger.error("真香警告...")
+# logger.info("你好啊")
+# logger.warning("真香警告...")
+# logger.error("真香警告...")
 

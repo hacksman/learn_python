@@ -3,7 +3,22 @@
 # @Time :11/8/18 15:12
 
 
-from kitchen.text.display import *
+# from kitchen.text.display import *
+
+
+# full width versions (SPACE is non-contiguous with ! through ~)
+SPACE = '\N{IDEOGRAPHIC SPACE}'
+EXCLA = '\N{FULLWIDTH EXCLAMATION MARK}'
+TILDE = '\N{FULLWIDTH TILDE}'
+
+# strings of ASCII and full-width characters (same order)
+west = ''.join(chr(i) for i in range(ord(' '),ord('~')))
+east = SPACE + ''.join(chr(i) for i in range(ord(EXCLA),ord(TILDE)))
+
+# build the translation table
+full = str.maketrans(west, east)
+
+# data = data.translate(full).rstrip().split('\n')
 
 
 foo_1 = ["下一季度业绩指引不佳 高通股价盘后跌超4%", "2018-11-08 10:27", "http://www.cs.com.cn/ssgs/gsxw/201811/t20181108_5890417.html"]
@@ -20,4 +35,50 @@ for i in range(1, 7):
     date = eval('foo_{}'.format(i))[1]
     url = eval('foo_{}'.format(i))[2]
 
-    print "%s" % textual_width_fill(title, 100), '11'
+    print("%100s" % title.translate(full).rstrip().split('\n'))
+
+    # print "%s" % textual_width_fill(title, 100), '11'
+
+
+# coding: utf8
+
+# full width versions (SPACE is non-contiguous with ! through ~)
+# SPACE = '\N{IDEOGRAPHIC SPACE}'
+# EXCLA = '\N{FULLWIDTH EXCLAMATION MARK}'
+# TILDE = '\N{FULLWIDTH TILDE}'
+#
+# # strings of ASCII and full-width characters (same order)
+# west = ''.join(chr(i) for i in range(ord(' '),ord('~')))
+# east = SPACE + ''.join(chr(i) for i in range(ord(EXCLA),ord(TILDE)))
+#
+# # build the translation table
+# full = str.maketrans(west, east)
+#
+# data = '''\
+# 蝴蝶(A song)
+# 心之城(Another song)
+# 支持你的爱人(Yet another song)
+# 根生的种子
+# 鸽子歌(Cucurrucucu palo whatever)
+# 林地之间
+# 蓝光
+# 在你眼里
+# 肖邦离别曲
+# 西行（魔戒王者再临主题曲）(Into something)
+# 深陷爱河
+# 钟爱大地
+# 时光流逝
+# 卡农
+# 舒伯特小夜曲(SERENADE)
+# 甜蜜的摇篮曲(Sweet Lullaby)
+# '''
+#
+# # Replace the ASCII characters with full width, and create a song list.
+# data = data.translate(full).rstrip().split('\n')
+#
+# # translate each printable line.
+# print(' ----------Songs-----------'.translate(full))
+# for i,song in enumerate(data):
+#     line = '|{:4}: {:20.20}|'.format(i+1,song)
+#     print(line.translate(full))
+# print(' --------------------------'.translate(full))
