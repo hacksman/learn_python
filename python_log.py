@@ -3,10 +3,11 @@
 # @Time :10/24/18 10:55
 
 """
-    📋 --->>> 控制台输出
-    🤔 --->>> 解析
-    📢 --->>> 说明
-    🌰 --->>> 例子
+    📋 --->>> 控制台输出（ter）
+    🤔 --->>> 解析（thi）
+    📢 --->>> 说明（exp）
+    🌰 --->>> 例子（exa)
+    ------>>> 分割线(sep)
 
     materials:
         # python logging模块使用教程
@@ -20,7 +21,9 @@
 
         # logging-cookbook
         4. https://docs.python.org/3/howto/logging-cookbook.html#context-info
+
 """
+
 
 import logging
 import sys
