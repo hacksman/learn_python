@@ -27,8 +27,8 @@
 
 import logging
 import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
+# reload(sys)
+# sys.setdefaultencoding('utf-8')
 
 # 1. 日志级别
 # 日志级别等级：debug < info < warning < error < critical（毁灭级，软件已经不能正常工作）
@@ -225,7 +225,7 @@ logger.setLevel(logging.INFO)
 logger.addHandler(log_stream_handler)
 logger.addHandler(log_file_handler)
 
-# logger.info("你好啊")
-# logger.warning("真香警告...")
-# logger.error("真香警告...")
+logger.info("你好啊")
+logger.warning("真香警告...")
+logger.error("真香警告...")
 
