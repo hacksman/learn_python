@@ -11,7 +11,7 @@
     ------>>> 分割线(sep)
 
     materials:
-        # python factory_method模块使用教程
+        # python factory_method模块使用示例
         1. https://github.com/faif/python-patterns/blob/master/creational/factory_method.py
 
         # Python 设计模式: 工厂模式(factory pattern)

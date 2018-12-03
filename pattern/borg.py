@@ -10,7 +10,7 @@
     ------>>> 分割线(sep)
 
     materials:
-        # python borg模块使用教程
+        # python borg模块使用示例
         1. https://github.com/faif/python-patterns/blob/master/creational/borg.py
 
         # Python设计模式(二) ——Borg模式
