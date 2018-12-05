@@ -16,6 +16,9 @@
         # Prototype Design Pattern
         2. https://sourcemaking.com/design_patterns/prototype
 
+        # Prototype Inheritence in Python
+        3. http://tobyho.com/2009/05/23/prototype-inheritence-in/
+
 """
 
 
